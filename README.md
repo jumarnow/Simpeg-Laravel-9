@@ -1,6 +1,7 @@
 # Sistem Informasi Kepegawaian Laravel 9
 Sistem Informasi Kepegawaian Sederhana menggunakan Laravel 9, merupakan pengembangan dari https://github.com/jumarnow/simpeg_magang.
 ##Preview
+
 ## Demo
 Address : http://13.250.112.156/
 ## Requirement
@@ -31,10 +32,3 @@ Please make a fresh database and edit this configuration in .env file. Make sure
 - DB_DATABASE
 - DB_USERNAME
 - DB_PASSWORD
-
-### Redis Configuration
-Run redis during this application running. Don't forget to set this configuration based on your redis configuration
-- REDIS_CLIENT
-- REDIS_HOST
-- REDIS_PASSWORD
-- REDIS_PORT
