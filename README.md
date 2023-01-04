@@ -1,6 +1,13 @@
 # Sistem Informasi Kepegawaian Laravel 9
 Sistem Informasi Kepegawaian Sederhana menggunakan Laravel 9, merupakan pengembangan dari https://github.com/jumarnow/simpeg_magang.
-##Preview
+## Fitur yang diupdate
+1. Laravel 9
+2. migration dan seeder dgn faker
+3. Login menggunakan username/email
+4. Paginate dan searching
+5. Notifikasi Toast
+6. Konfirmasi Hapus
+7. Perbaikan bug
 
 ## Demo
 Address : http://13.250.112.156/
