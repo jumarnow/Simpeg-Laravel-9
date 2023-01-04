@@ -1,0 +1,16 @@
+extends layouts/_layout.pug
+
+block variables
+	- var activePage = 'error-page'
+	- var activeGroup = 'pages'
+
+block title
+	title Error Page - Vali Admin
+
+block content
+	.page-error.tile
+		h1
+			i.fa.fa-exclamation-circle
+			|  Error 404: Page not found
+		p The page you have requested is not found.
+		p: a.btn.btn-primary(href="javascript:window.history.back();") Go Back
