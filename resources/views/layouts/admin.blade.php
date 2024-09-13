@@ -29,7 +29,7 @@
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             <li>
-              <a  class="dropdown-item" href="{{route('logout')}}"  onclick="event.preventDefault();
+              <a  class="dropdown-item" href="{{url('logout')}}"  onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-lg"></i> Logout</a>
             </li>
             <form id="logout-form" action="/logout" method="POST" style="display: none;">
@@ -55,10 +55,10 @@
             <i class="treeview-indicator fa fa-angle-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item {{ request()->is('agama') ? 'active' : '' }}" href="{{route('agama.index')}}"><i class="icon fa fa-circle-o"></i> Agama</a></li>
-            <li><a class="treeview-item {{ request()->is('negara') ? 'active' : '' }}" href="{{route('negara.index')}}"><i class="icon fa fa-circle-o"></i> Kewarganegaraan</a></li>
-            <li><a class="treeview-item {{ request()->is('darah') ? 'active' : '' }}" href="{{route('darah.index')}}"><i class="icon fa fa-circle-o"></i> Golongan Darah</a></li>
-            <li><a class="treeview-item {{ request()->is('keluarga') ? 'active' : '' }}" href="{{route('keluarga.index')}}"><i class="icon fa fa-circle-o"></i> Keluarga</a></li>
+            <li><a class="treeview-item {{ request()->is('agama') ? 'active' : '' }}" href="{{url('agama')}}"><i class="icon fa fa-circle-o"></i> Agama</a></li>
+            <li><a class="treeview-item {{ request()->is('negara') ? 'active' : '' }}" href="{{url('negara')}}"><i class="icon fa fa-circle-o"></i> Kewarganegaraan</a></li>
+            <li><a class="treeview-item {{ request()->is('darah') ? 'active' : '' }}" href="{{url('darah')}}"><i class="icon fa fa-circle-o"></i> Golongan Darah</a></li>
+            <li><a class="treeview-item {{ request()->is('keluarga') ? 'active' : '' }}" href="{{url('keluarga')}}"><i class="icon fa fa-circle-o"></i> Keluarga</a></li>
           </ul>
         </li>
         <li class="treeview {{ request()->is('pegawai','pegawai/*') ? 'is-expanded' : '' }}">
@@ -67,15 +67,15 @@
             <i class="treeview-indicator fa fa-angle-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item {{ request()->is('pegawai') ? 'active' : '' }}" href="{{route('pegawai.index')}}"><i class="icon fa fa-circle-o"></i> Data Pegawai</a></li>
-            <li><a class="treeview-item {{ request()->is('pegawai/create') ? 'active' : '' }}" href="{{route('pegawai.create')}}" target="" rel="noopener"><i class="icon fa fa-circle-o"></i> Tambah Pegawai</a></li>
+            <li><a class="treeview-item {{ request()->is('pegawai') ? 'active' : '' }}" href="{{url('pegawai')}}"><i class="icon fa fa-circle-o"></i> Data Pegawai</a></li>
+            <li><a class="treeview-item {{ request()->is('pegawai/create') ? 'active' : '' }}" href="{{url('pegawai/create')}}" target="" rel="noopener"><i class="icon fa fa-circle-o"></i> Tambah Pegawai</a></li>
           </ul>
         </li>
         <li><a class="app-menu__item {{ request()->is('chart') ? 'active' : '' }}" href="{{url('chart')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
         </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Rekap Data</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="{{route('pegawai-pdf')}}"><i class="icon fa fa-circle-o"></i> Pegawai</a></li>
+            <li><a class="treeview-item" href="{{url('pegawai-pdf')}}"><i class="icon fa fa-circle-o"></i> Pegawai</a></li>
           </ul>
         </li>
       </ul>
