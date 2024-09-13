@@ -48,11 +48,11 @@
         </form>        
       </div>
     </section>
-    <script src="{{asset('template/docs/js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{asset('template/docs/js/popper.min.js') }}"></script>
-    <script src="{{asset('template/docs/js/bootstrap.min.js') }}"></script>
-    <script src="{{asset('template/docs/js/main.js') }}"></script>
-    <script type="text/javascript" src="{{asset('template/docs/js/plugins/chart.js') }}"></script>
+    <script src="{{secure_asset('template/docs/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{secure_asset('template/docs/js/popper.min.js') }}"></script>
+    <script src="{{secure_asset('template/docs/js/bootstrap.min.js') }}"></script>
+    <script src="{{secure_asset('template/docs/js/main.js') }}"></script>
+    <script type="text/javascript" src="{{secure_asset('template/docs/js/plugins/chart.js') }}"></script>
     <script type="text/javascript">
       $('.login-content [data-toggle="flip"]').click(function() {
       	$('.login-box').toggleClass('flipped');
