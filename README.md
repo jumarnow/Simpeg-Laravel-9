@@ -10,7 +10,7 @@ Sistem Informasi Kepegawaian Sederhana menggunakan Laravel 9, merupakan pengemba
 7. Perbaikan bug
 
 ## Demo
-Address : http://13.250.112.156/
+Address : https://main-simpeg.wd1ea4.easypanel.host/
 ## Requirement
 - PHP >= 8.1
 - Composer
