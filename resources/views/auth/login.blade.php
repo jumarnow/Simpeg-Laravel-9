@@ -22,7 +22,7 @@
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
           <div class="form-group">
             <label class="control-label">USERNAME/EMAIL</label>
-            <input class="form-control" id="login" type="text" name="login" placeholder="Username" value="{{ old('login') }}" required autofocus>
+            <input class="form-control" id="login" type="text" name="login" placeholder="Username" value="admin" required autofocus>
             @if ($errors->has('login'))
                 <span class="help-block">
                 <strong>{{ $errors->first('login') }}</strong>
@@ -30,7 +30,7 @@
           </div>
           <div class="form-group">
             <label class="control-label">PASSWORD</label>            
-            <input class="form-control" id="password" type="password" placeholder="Password" name="password" required>
+            <input class="form-control" id="password" type="password" placeholder="Password" name="password" value="123456" required>
           </div>
           <div class="form-group">
             <div class="utility">
