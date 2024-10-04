@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{secure_asset('template/docs/css/main.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('template/docs/css/main.css')}}">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="app sidebar-mini rtl">
@@ -41,7 +41,7 @@
     </header>
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="{{secure_asset('img/pegawai.png')}}" width="50px" alt="User Image">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="{{asset('img/pegawai.png')}}" width="50px" alt="User Image">
         <div>
           <p class="app-sidebar__user-name">Jumarno</p>
           <p class="app-sidebar__user-designation">Frontend Developer</p>
@@ -81,14 +81,14 @@
       </ul>
     </aside>
     @yield('content')
-    <script src="{{secure_asset('template/docs/js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{secure_asset('template/docs/js/popper.min.js') }}"></script>
-    <script src="{{secure_asset('template/docs/js/bootstrap.min.js') }}"></script>
-    <script src="{{secure_asset('template/docs/js/main.js') }}"></script>
-    <script src="{{secure_asset('template/docs/js/plugins/pace.min.js') }}"></script>
-    <script type="text/javascript" src="{{secure_asset('template/docs/js/plugins/chart.js') }}"></script>
-    <link rel="stylesheet" href="{{secure_asset('toast')}}//toastr.min.css">
-    <script src="{{secure_asset('toast')}}/toastr.min.js"></script>
+    <script src="{{asset('template/docs/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{asset('template/docs/js/popper.min.js') }}"></script>
+    <script src="{{asset('template/docs/js/bootstrap.min.js') }}"></script>
+    <script src="{{asset('template/docs/js/main.js') }}"></script>
+    <script src="{{asset('template/docs/js/plugins/pace.min.js') }}"></script>
+    <script type="text/javascript" src="{{asset('template/docs/js/plugins/chart.js') }}"></script>
+    <link rel="stylesheet" href="{{asset('toast')}}//toastr.min.css">
+    <script src="{{asset('toast')}}/toastr.min.js"></script>
 
     <div class="modal fade" id="modal_hapus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
